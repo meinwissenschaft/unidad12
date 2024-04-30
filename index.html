@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidad 12</title>
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="estilodecajas.css">
+        <!-- CSS de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+        <!-- JS Unidad 7-->
+        <script src="unidad7.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="titulo">
+                <h1>Introducción a la Filosofía Moderna</h1>
+            </div>
+            <nav id="btn_principal">
+                <ul class="botonera">
+                    <li><a href="#sect1">Inicio de modernidad</a></li>
+                    <li><a href="#sect2">Exponentes Modernos</a></li>
+                    <li><a href="#sect3">Posturas Filosofica</a></li>
+                    <li><a href="#sect4">Corrientes Filosóficas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="sect1">
+            <div id="SecCont1">
+                <p class="txt_img1">El Pensador</p>
+                <p class="txt_img2 iceberg-regular">Una persona pensadora no dejará de conocer los males que nos amenazan.</p>
+            </div>
+            <div id="SecCont2">
+                <h2>¿Cuándo inicia la filosofía moderna?</h3>
+                <p>La Filosofía Moderna inicio en el siglo XV, durante el periodo de la modernidad, 
+                el cual es el tercer periodo histórico en el que se divide convenmcionalmente la historia
+                universal.</p>
+            </div>
+            <div id="SecCont3">
+                <h2>¿Cuál era su centralidad y a quién se contraponia?</h3>
+                <p>Esta corriente surgio dándole lugar central a el humanismo,  un movimiento que enfatizó 
+                    el valor y la importancia de los seres humanos en el universo, en contraste con la filosofía 
+                    medieval, que siempre puso a Dios y al cristianismo en el centro.</p>
+            </div>
+            <div id="SecCont4">
+                <h2>¿Cuál fue el punto de ruptura con la filosofía medieval?</h3>
+                <p class="txt_destacado">Cuando apareció la “filosofía de la naturaleza” del Renacimiento, quebró con la 
+                concepción medieval de la naturaleza en términos de fines y ordenamiento divino, y 
+                comenzó a pensar en términos de fuerzas, causas físicas y mecanismos.</p>
+            </div>
+        </section>
+        <section id="sect2">
+            <div id="Sec2Cont1">
+                <h2>Exponentes de la Modernidad</h2>
+            </div>
+            <div id="Sec2Cont2">
+                <h2>Rene Descartes</h2>
+                <div id="cajaRene">
+                    <p>Fue un filósofo, matemático y físico francés considerado el padre de la filosofía moderna, así como uno de los protagonistas de la revolución científica.</p>
+                </div>
+                <button id="saber" onclick="saberMas()">Saber más</button>
+                <p id="ReneD" style="display: none;">Su mayor obra fue "El discurso del Metodo"</p>
+            </div>
+            <div id="Sec2Cont3">
+                <h2>Respuestas a nuestro cuestionario</h2>
+                            <script>
+                                document.write('<p class="destacado_rojo">1ra respuesta: '+preg1+'</p>')
+                                document.write('<p class="destacado_rojo">2da respuesta: '+preg2+'</p>')
+                                document.write('<p class="destacado_rojo">3ra respuesta: '+preg3+'</p>')
+                                document.write('<p class="destacado_rojo">4ta respuesta: '+preg4+'</p>')
+                                document.write('<p class="destacado_rojo">5ta respuesta: '+preg5+'</p>')
+                                document.write('<p class="destacado_rojo">Un curso de Introducción a la Filosofía dura 90hs (12 semanas). La cantidad de horas ha dedicarle es de: '+resultado+' hora por día.</p>')
+                            </script>
+                <button id="masAyuda" onclick="plusAyuda()">Extra!</button>
+            </div>
+            <div id="Sec2Cont4">
+                <h2>Friedrich Nietzsche</h2>
+                <div id="cajaNietz">
+                    <p> Fue un filósofo aleman, cuya obra ha ejercido una profunda influencia en el pensamiento mundial 
+                    contemporáneo y en la cultura occidental, principal exponente del Existencialismo.</p>
+                </div>
+                <button id="conocerNietz" onclick="dataNietzche()">Saber más</button>
+                <p id="FNietz" style="display: none;">Su mayor obra fue "Asi habla Zaratustra".</p>
+            </div>
+        </section>
+        <section id="sect3">
+            <div id="Sec3Cont1">
+                <h2>Idealismo</h2>
+                <p>El Idealismo es una postura filosófica que afirma la existencia independiente de las ideas, afirmando que la realidad que conocemos solo es una construcción nuestra mente condicionada por los sentidos (vista, tacto, olfato, oído, gusto) que interactúan con lo externo.</p>
+                <a href="https://es.wikipedia.org/wiki/Idealismo" class="btn bg_gris" target="_blank">Referencias</a>
+            </div>
+            <div id="Sec3Cont2">
+              <img src="Imagenes/kant.webp" class="img-fluid" alt="Kant">
+              <!-- Inicio de modal bs-->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn bg_gris kant" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Immanuel Kant</button>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">La filosofía moderna no puede dejar de lado a Kant</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Fue el gran referente del idealismo, en sus obras, Kant distingue tres preguntas filosóficas:</p>
+                      <li>¿Qué puedo conocer?</li>
+                      <li>¿Qué debo hacer?</li>
+                      <li>¿Qué puedo esperar?</li>
+                      <p>Kant entiende por sensación el efecto de un objeto sobre la facultad representativa, en cuanto somos afectados por él. Se entiende que se prescinde por completo de la naturaleza del objeto afectante y que solamente se presta atención al efecto que se produce en nosotros, en lo puramente subjetivo</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin de modal bs-->
+            </div>
+            <div id="Sec3Cont3">
+              <h2>Realismo</h2>
+              <p>El realismo filosófico es aquella postura que manifiesta que los objetos tienen una existencia independiente del sujeto que lo observa. En tal sentido, es opuesto al escepticismo, idealismo y al constructivismo</p>
+              <!-- Inicio modal BS-->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn bg_gris real" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                Referentes
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Referentes del Realismo</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <ul>
+                        <li>Platón</li>
+                        <li>Aristóteles</li>
+                        <li>Tomás de Aquino</li>
+                        <li>Bertrand Russell</li>
+                        <li>Mario Bunge</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin de modal BS-->
+            </div>
+            <div id="Sec3Cont4">
+              <img src="Imagenes/russell.jpg" class="img-fluid" alt="Russell">
+              <!-- Inicio de modal bs-->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn bg_gris russ" data-bs-toggle="modal" data-bs-target="#exampleModal">Bertrand Russell</button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Uno de los fundadores de la Filosofía analítica.</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>A principios del siglo xx, junto con G. E. Moore, Russell fue responsable en gran medida de la rebelión británica contra el idealismo. Esta rebelión tuvo repercusión 30 años después en Viena, en la llamada "rebelión en contra de la metafísica" encabezada por los positivistas lógicos</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin de modal bs-->
+            </div>
+        </section>
+        <section id="sect4">
+            <div class="container-fluid">
+                <div class="row" id="mod1">
+                    <div class="col-xl-4 col-md-3" id="mod1Caja1">
+                        <!-- Inicio card BS-->
+                        <div class="card" >
+                            <img src="Imagenes/empirismo.jpg" class="card-img-top" alt="Empirismo">
+                            <div class="card-body bg_card">
+                              <h5 class="card-title txt_rojo">Empirismo</h5>
+                              <p class="card-text txt_emp"> Es una escuela filosófica que piensa a la experiencia como punto de partida y fundamento todo conocimiento posible.</p>
+                              <a href="https://concepto.de/empirismo/#:~:text=El%20empirismo%20es%20una%20escuela,la%20base%20de%20todo%20conocimiento." target="_blank" class="btn bg_gris emp">Referencias</a>
+                            </div>
+                          </div>
+                        <!-- fin card BS-->
+                    </div>
+                    <div class="col-xl-6 col-md-6" id="mod1Caja2">
+                        <!-- Inicio de Acordion JS-->
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Escepticismo
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                El escepticismo es una <strong>teoría del conocimiento</strong> que afirma la inexistencia de la verdad, o que, si existe, el ser humano es incapaz de conocerla. La palabra "escéptico" viene del griego skeptikoi (de skeptesthai que en griego significa examinar o investigar). La etimología de esta palabra indica en su significado: <strong>"quien investiga"</strong>. Los filósofos escépticos <strong><em>no creen en una verdad objetiva</em></strong>, porque todo es subjetivo, dependiendo del sujeto que estudia y no del objeto estudiado.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Dogmatismo
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                El dogmatismo es una posición filosófica respecto a la <strong>posibilidad del conocimiento</strong>. Hace derivar el pensamiento del ser, presupone la <strong>supremacía del objeto respecto al sujeto y la capacidad del sujeto</strong>  para recibir, sin distorsiones, la verdad del objeto tal como es en sí mismo y de forma independiente al sujeto.
+                                <h4>Características:</h4>
+                                <li>Existen las verdades absolutas e incuestionables, llamados dogmas.</li>
+                                <li>Propio del conocimiento no científico.</li>
+                                <li>Escaso rigor y cerrado a la falsabilidad.</li>
+                                <li>Dogmatismo es una posición contraria al conocimiento científico.</li>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Relativismo
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                El relativismo es una posición filosófica que <strong>niega la existencia de verdades absolutas</strong>. En otras palabras, considera el saber como incompleto y sostiene que el conocimiento humano es relativo, subjetivo e incapaz de ser objetivo, ya que está influenciado por la historia y otras ideas preconcebidas.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fin de Acordion JS-->
+                    </div>
+                    <div class="col-xl-2 col-md-3" id="mod1Caja3">
+                        <img src="Imagenes/JhonLoke.jpg" class="img-fluid" alt="Jhon Loke imagen">   
+                        <p>Jhon Loke, es considerado padre del "Liberalismo Clásico", uno de los primeros empiristas británicos. Influido por las ideas de Francis Bacon, realizó una importante contribución a la teoría del contrato social.</p>
+                        <!-- Inicio de dropdown button JS-->
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle bg_gris loke" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más Info
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://es.wikipedia.org/wiki/John_Locke#Biograf%C3%ADa">Biografia</a></li>
+                            <li><a class="dropdown-item" href="https://www.liberalismo.org/articulos/112/john/locke/">Liberalismo</a></li>
+                            <li><a class="dropdown-item" href="https://plato.stanford.edu/entries/locke/">Enciclopedía Filosófica</a></li>
+                          </ul>
+                        </div>
+                        <!-- Fin de dropdown button JS-->
+                      </div>
+                </div>
+                <div class="row" id="mod2">
+                    <div class="col-xl-4 col-md-6" id="mod2Caja1">
+                        <h2>Regístrate y colabora con nuestra web:</h2>
+                        <form action="">
+                            <input type="text" placeholder="Nombre" class="form-control" required minlength="3" maxlength="20">
+                            <input type="text" placeholder="Apellido" class="form-control" required minlength="3" maxlength="50">
+                            <input type="email" placeholder="Correo Electrónico" class="form-control" required minlength="10" maxlength="150">
+                            <input type="number" placeholder="Edad" class="form-control" min="13" max="105">
+                            <h3>Selecciona un contenido de tu interes:</h4>
+                            <select class="form-control">
+                                <option value="Inicial">Filosofía Clásica</option>
+                                <option value="Intermedio">Filosofía Moderna</option>
+                                <option value="Avanzado">Estructuras de pensamiento</option>
+                            </select>
+                            <textarea rows="5" placeholder="Comentario" class="form-control"></textarea>
+                            <input type="submit" value="Enviar registro" class="btn bg_gris enviar">
+                        </form>
+                    </div>
+                    <div class="col-xl-8 col-md-6" id="mod2Caja2">
+                        <!-- Inicio de Carrucel-->
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Imagenes/Carrucel/FoulcautM.jpg" class="d-block w-100" alt="foucault">
+                              <div class="carousel-caption d-md-block img_txt">
+                                <h1>Michael Foucault</h1>
+                                <p>El saber es el único espacio de libertad del ser.</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Imagenes/Carrucel/RussellB.jpg" class="d-block w-100" alt="Russell">
+                              <div class="carousel-caption d-md-block img_txt">
+                                <h1>Bertrand Russel</h1>
+                                <p>Lo que los hombres realmente quieren no es el conocimiento sino la certidumbre</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Imagenes/Carrucel/SartreJP.jpg" class="d-block w-100" alt="Sartre">
+                              <div class="carousel-caption d-md-block img_txt">
+                                <h1>Jean-Paul Sartre</h1>
+                                <p>Sólo la existencia puede proyectarse fácticamente en el mundo por la propia decisión del hombre, todo depende de él</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Imagenes/Carrucel/HeideggerM.jpg" class="d-block w-100" alt="Heidegger">
+                              <div class="carousel-caption d-md-block img_txt">
+                                <h1>Martin Heidegger</h1>
+                                <p>Lo más interesante en nuestro tiempo de reflexión es que todavía no estamos pensando.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <!-- Fin de Carrucel-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="Pie">
+            <div id="PieCont1">
+                <p class="pie1">2024 Federico Damian Brem - Todos los derechos reservados</p>
+            </div>
+            <div id="PieCont2">
+                <p class="pie2">Mail: brem.federico@gmail.com</p>
+            </div>
+            <div id="PieCont3">
+                <p class="pie3"><a href="https://www.instagram.com/fdbrem/?utm_source=qr&igsh=ZmdlZmh3d3dkY3R0" target="_blank">FDBREM</a></p>
+            </div>
+            <div id="PieCont4">
+                <p class="pie4"><a href="https://www.facebook.com/share/bPnoVzXUCnS1NUKo/?mibextid=qi2Omg" target="_blank">Fede Brem</a></p>
+            </div>
+        </footer>
+        <!-- JS Unidad 8-->
+        <script type="text/javascript" src="unidad8.js"></script>
+        <!-- JS Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html> 
